@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $lightGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-size: 13px;
+  font-family: $primaryFont;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @include breakpoint-up(medium) {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+}
+
+
+
